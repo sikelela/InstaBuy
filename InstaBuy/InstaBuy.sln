@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaBuy", "InstaBuy\InstaBuy.csproj", "{D320F0C8-6CF5-4121-90DB-1A3297B5A578}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaBuy.Tests", "InstaBuy.Tests\InstaBuy.Tests.csproj", "{4A4D05BD-D967-4A7D-89FA-1F8ADE386B54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D320F0C8-6CF5-4121-90DB-1A3297B5A578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D320F0C8-6CF5-4121-90DB-1A3297B5A578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D320F0C8-6CF5-4121-90DB-1A3297B5A578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D320F0C8-6CF5-4121-90DB-1A3297B5A578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A4D05BD-D967-4A7D-89FA-1F8ADE386B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A4D05BD-D967-4A7D-89FA-1F8ADE386B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A4D05BD-D967-4A7D-89FA-1F8ADE386B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4D05BD-D967-4A7D-89FA-1F8ADE386B54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
