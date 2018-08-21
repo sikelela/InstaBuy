@@ -1,7 +1,56 @@
 ﻿@{
-    ViewBag.Title = "About";
+  ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Describing a product, that is so awesome, you want to buy it the instant you see it.</p>
+<div class="mainbody">
+  <div class="jumbotron">
+    <h2>@ViewBag.Title</h2>
+    <div><span  class="defName">instabuy</span></div>
+      <div class="defSay"><span>/<span>ˈinst(ə)buy</span>/</span>
+        <audio id="player" src="../../images/dance.mp3"></audio>
+        <span>
+          <a class="player" onclick="musicPlayer()"><i class='fa fa-volume-up fa-1x'></i></a>
+        </span>
+      </div>
+      <i><span>adjective</span></i>  
+      <div><div style="float:left">
+        <span>1</span>. 
+        </div>
+        <div style="margin-left:20px">
+          <div>
+            <div style="display:inline" data-dobid="dfn">
+              <span>describing a product, that is so awesome, you want to buy it the instant you see it.</span>
+            </div>
+            <div><span class="defExample">"hey check it out, a t-shirt with a lion riding a flying manta ray, just $10 today only"</span></div>
+            <div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td style="padding-right:3px"></td>
+                    <td>
+                      <span class="defTag">#instant</span>
+                      <span class="defTag">#purchase</span>
+                      <span class="defTag">#buy</span>
+                      <span class="defTag">#shop</span>
+                      <span class="defTag">#shopper</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+  <script type="text/javascript">
+  function musicPlayer() {
+    if (document.getElementById('player').paused)
+    {
+      document.getElementById('player').play();
+    }
+    else {
+      document.getElementById('player').pause();
+    }
+  }
+  </script>

@@ -171,10 +171,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="images\acc.png" />
     <Content Include="images\bey.png" />
     <Content Include="images\beyonce.png" />
     <Content Include="images\clothing.png" />
+    <Content Include="images\dance.mp3" />
     <Content Include="images\frsherthanyou.gif" />
     <Content Include="images\ov.png" />
     <Content Include="images\overlay.png" />
@@ -198,6 +200,11 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -212,6 +219,7 @@
     <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\clusterize.css" />
     <Content Include="Styles\dashboard.css" />
+    <Content Include="Styles\font-awesome.min.css" />
     <Content Include="Styles\fullcalendar.css" />
     <Content Include="Styles\j.css" />
     <Content Include="Styles\jquery-ui-1.8.19.custom.css" />

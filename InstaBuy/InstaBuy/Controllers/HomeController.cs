@@ -6,12 +6,13 @@ namespace InstaBuy.Controllers
   {
     public ActionResult Index()
     {
+      ViewBag.User = "Sikelela";
       return View();
     }
 
     public ActionResult About()
     {
-      ViewBag.Message = "Welcome to Insta Buy";
+      ViewBag.Message = "An Online Fashion Store dedicated to delivereing the fashion you desire to your door.";
 
       return View();
     }

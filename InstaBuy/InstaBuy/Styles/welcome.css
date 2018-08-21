@@ -169,11 +169,21 @@ p {
   background-image: url("../../images/pink.png");
 }
 
-.item5 {
-  background-image: url("../../images/public-domain-images-free-stock-photos-high-quality-resolution-downloads-unsplash0067-1000x666.jpg");
+.defName {
+  font-weight: bold !important;
+  font-size:xx-large;
 }
 
-.item6 {
-  background-image: url("../../images/unsplash-love-yourself-article-e1397699812178.jpg");
+.defSay {
 }
 
+.defExample {
+  color: #878787 !important;
+}
+.defTag {
+  color:blue;
+}
+
+.player{
+  color:black;
+}

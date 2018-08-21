@@ -26,6 +26,7 @@ namespace InstaBuy
                 "~/Styles/bootstrap.min.css",
                 "~/Styles/site.css",
                 "~/Styles/jquery-ui-1.8.19.custom.css",
+                 "~/Styles/font-awesome.min.css",
                 "~/Styles/welcome.css"));
 
     }
