@@ -1,5 +1,4 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace InstaBuy
 {
@@ -23,9 +22,12 @@ namespace InstaBuy
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/respond.js"));
 
-      bundles.Add(new StyleBundle("~/Content/css").Include(
-                "~/Content/bootstrap.css",
-                "~/Content/site.css"));
+      bundles.Add(new StyleBundle("~/Styles/css").Include(
+                "~/Styles/bootstrap.min.css",
+                "~/Styles/site.css",
+                "~/Styles/jquery-ui-1.8.19.custom.css",
+                "~/Styles/welcome.css"));
+
     }
   }
 }

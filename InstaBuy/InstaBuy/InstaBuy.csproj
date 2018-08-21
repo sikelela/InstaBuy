@@ -171,12 +171,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="images\acc.png" />
+    <Content Include="images\bey.png" />
+    <Content Include="images\beyonce.png" />
+    <Content Include="images\clothing.png" />
+    <Content Include="images\frsherthanyou.gif" />
+    <Content Include="images\ov.png" />
+    <Content Include="images\overlay.png" />
+    <Content Include="images\ovs.png" />
+    <Content Include="images\pink.jpg" />
+    <Content Include="images\shoes.png" />
+    <Content Include="Styles\bootstrap.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="images\blue-light-stripesparticles.png" />
     <Content Include="images\images.jpg" />
     <Content Include="images\public-domain-images-free-stock-photos-high-quality-resolution-downloads-unsplash0067-1000x666.jpg" />
@@ -201,6 +209,21 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\clusterize.css" />
+    <Content Include="Styles\dashboard.css" />
+    <Content Include="Styles\fullcalendar.css" />
+    <Content Include="Styles\j.css" />
+    <Content Include="Styles\jquery-ui-1.8.19.custom.css" />
+    <Content Include="Styles\myjquery1.css" />
+    <Content Include="Styles\opensans.css" />
+    <Content Include="Styles\raleway.css" />
+    <Content Include="Styles\Site-1.0.min.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\SiteVersion1.css" />
+    <Content Include="Styles\socialFeed.css" />
+    <Content Include="Styles\spectrum.css" />
+    <Content Include="Styles\welcome.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
