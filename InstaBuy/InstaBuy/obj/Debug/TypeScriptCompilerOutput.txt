@@ -1,0 +1,2 @@
+C:\Users\SNkohla\Documents\GitHub\InstaBuy\InstaBuy\InstaBuy\appScriptsJS\app.js
+C:\Users\SNkohla\Documents\GitHub\InstaBuy\InstaBuy\InstaBuy\appScriptsJS\app.js.map
