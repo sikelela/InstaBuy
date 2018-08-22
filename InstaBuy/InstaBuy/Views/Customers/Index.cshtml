@@ -1,0 +1,117 @@
+﻿@model IEnumerable<InstaBuy.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoginName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AddressLine1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AddressLine2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AddressLine3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AddressLine4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AddressCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AddressCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProvinceID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CountryID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoginName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AddressLine1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AddressLine2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AddressLine3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AddressLine4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AddressCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AddressCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProvinceID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CountryID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CustomerID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CustomerID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CustomerID })
+        </td>
+    </tr>
+}
+
+</table>

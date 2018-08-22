@@ -29,6 +29,14 @@ namespace InstaBuy
                  "~/Styles/font-awesome.min.css",
                 "~/Styles/welcome.css"));
 
+      bundles.Add(new ScriptBundle("~/Script/Bundles")
+        .Include(
+        "~/Bundles/inline.*",
+        "~/Bundles/polyfills.*",
+        "~/Bundles/scripts.*",
+        "~/Bundles/vendor.*",
+        "~/Bundles/main.*"));
+
     }
   }
 }

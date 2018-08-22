@@ -1,0 +1,57 @@
+﻿@model IEnumerable<InstaBuy.Models.Sale>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SaleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SaleDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TermsAndConditions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StartDateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EndDateTime)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SaleName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SaleDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TermsAndConditions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StartDateTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EndDateTime)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SaleID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SaleID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SaleID })
+        </td>
+    </tr>
+}
+
+</table>

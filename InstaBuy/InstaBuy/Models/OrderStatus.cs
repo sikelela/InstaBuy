@@ -5,7 +5,7 @@ namespace InstaBuy.Models
 {
   public class OrderStatus
   {
-    public int OrderTypeID { get; set; }
+    public int OrderStatusID { get; set; }
     public string OrderStatusCode { get; set; }
     public string OrderStatusName { get; set; }
   }

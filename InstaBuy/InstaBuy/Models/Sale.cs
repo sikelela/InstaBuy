@@ -6,7 +6,7 @@ namespace InstaBuy.Models
 {
   public class Sale
   {
-    public int OrderID { get; set; }
+    public int SaleID { get; set; }
     public string SaleName { get; set; }
     public string SaleDescription { get; set; }
     public string TermsAndConditions { get; set; }

@@ -1,0 +1,34 @@
+﻿@model InstaBuy.Models.OrderStatus
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OrderStatus</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderStatusCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderStatusCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderStatusName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderStatusName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OrderStatusID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

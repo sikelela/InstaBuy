@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 
 namespace InstaBuy.Models
 {
@@ -12,6 +13,7 @@ namespace InstaBuy.Models
     public string Size { get; set; }
     public string ShortDescription { get; set; }
     public string FullDescription { get; set; }
+    public List<ProductImage> ProductImages { get; set; }
   }
 
   public class ProductDBContext : DbContext

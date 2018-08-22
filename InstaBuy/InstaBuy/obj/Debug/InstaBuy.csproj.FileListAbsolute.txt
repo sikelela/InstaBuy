@@ -71,3 +71,4 @@ C:\Users\SNkohla\Documents\GitHub\InstaBuy\InstaBuy\InstaBuy\bin\Microsoft.AI.Wi
 C:\Users\SNkohla\Documents\GitHub\InstaBuy\InstaBuy\InstaBuy\bin\Microsoft.AI.Web.xml
 C:\Users\SNkohla\Documents\GitHub\InstaBuy\InstaBuy\InstaBuy\obj\Debug\InstaBuy.dll
 C:\Users\SNkohla\Documents\GitHub\InstaBuy\InstaBuy\InstaBuy\obj\Debug\InstaBuy.pdb
+C:\Users\SNkohla\Documents\GitHub\InstaBuy\InstaBuy\InstaBuy\obj\Debug\InstaBuy.csprojResolveAssemblyReference.cache

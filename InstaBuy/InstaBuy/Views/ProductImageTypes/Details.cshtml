@@ -1,0 +1,26 @@
+﻿@model InstaBuy.Models.ProductImageType
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProductImageType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductImageTypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductImageTypeName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductImageTypeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
