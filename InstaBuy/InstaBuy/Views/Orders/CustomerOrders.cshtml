@@ -1,0 +1,22 @@
+﻿@model InstaBuy.ViewModels.CustomerOrdersViewModel
+
+@*This page lists customer orders*@
+
+@{
+  ViewBag.Title = "Orders";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+  var completeOrder = Model.Orders.Count > 1 ? "complete" : null;
+}
+
+<h2 class="@completeOrder"> @Model.Customer.FirstName @Model.Customer.LastName</h2>
+
+
+<ul>
+  @foreach (var order in Model.Orders)
+  {
+    <li>@order.OrderNumber</li>
+  }
+</ul>

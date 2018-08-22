@@ -1,8 +1,9 @@
-﻿using System.Data.Entity;
-using System.Linq;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Net;
 using System.Web.Mvc;
 using InstaBuy.Models;
+using InstaBuy.ViewModels;
 
 namespace InstaBuy.Controllers
 {
@@ -11,9 +12,57 @@ namespace InstaBuy.Controllers
     private OrderDBContext db = new OrderDBContext();
 
     // GET: Orders
-    public ActionResult Index()
+    public ActionResult Index(int id)
     {
-      return View(db.Orders.ToList());
+      Order order = new Order();
+      /*
+      Pass Data to View :Option One 
+      ViewData["Order"] = order;
+
+      Pass Data to View :Option Two 
+      ViewBag.Order = order;
+      */
+
+      /*Below is equivalent to
+      var viewResult = new ViewResult();
+      viewResult.ViewData.Model;
+      */
+
+      return View(order);
+    }
+
+    // GET: Orders
+    [Route("orders/orderList/{pageIndex:regex(\\d{4}):range(1,12)}/{sortby}")]
+    public ActionResult OrderList(int? pageIndex, string sortby)
+    {
+      if (!pageIndex.HasValue)
+        pageIndex = 1;
+      if (string.IsNullOrWhiteSpace(sortby))
+        sortby = "OrderNumber";
+
+      return Content(string.Format("Page: {0} Sort By {1}", pageIndex, sortby));
+    }
+
+    // GET: Customer Orders
+    public ActionResult CustomerOrders()
+    {
+      Customer customer = new Customer()
+      {
+        CustomerID = 1,
+        FirstName = "John",
+        LastName = "Doe"
+      };
+      var orders = new List<Order>();
+      orders.Add(new Order { CustomerID = 1, OrderNumber = "001" });
+      orders.Add(new Order { CustomerID = 1, OrderNumber = "002" });
+
+      var viewModel = new CustomerOrdersViewModel()
+      {
+        Customer = customer,
+        Orders = orders
+      };
+
+      return View("CustomerOrders", viewModel);
     }
 
     // GET: Orders/Details/5

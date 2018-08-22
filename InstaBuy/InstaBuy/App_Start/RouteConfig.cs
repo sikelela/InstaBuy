@@ -15,10 +15,26 @@ namespace InstaBuy
           defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
       );
 
+      routes.MapMvcAttributeRoutes();
+      /*
       routes.MapRoute(
-           name: "Customer",
-           url: "{controller}/{action}/{id}",
-           defaults: new { controller = "Customer", action = "Index", id = UrlParameter.Optional }
+        name: "OrdersByNumber",
+        url: "orders/orderList/{pageIndex}/{sortby}",
+        defaults: new { controller = "Orders", action = "OrderList" },
+        constraints: new { pageIndex = @"\d{2}" }
+        );
+      */
+
+      routes.MapRoute(
+      name: "CustomerOrders",
+      url: "orders/customerOrders",
+      defaults: new { controller = "Orders", action = "CustomerOrders" }
+      );
+
+      routes.MapRoute(
+        name: "Customer",
+        url: "{controller}/{action}/{id}",
+        defaults: new { controller = "Customer", action = "Index", id = UrlParameter.Optional }
       );
 
     }

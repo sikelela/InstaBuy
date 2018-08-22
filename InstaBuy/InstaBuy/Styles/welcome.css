@@ -187,3 +187,7 @@ p {
 .player{
   color:black;
 }
+
+.complete {
+  color: blue;
+}

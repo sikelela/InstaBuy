@@ -1,0 +1,57 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      @Html.ActionLink("Insta Buy", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="@Url.Action("Index", "Home")">
+            <i class="fa fa-home"></i>
+            <span> Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="@Url.Action("About", "Home")">
+            <i class="fa fa-info-circle"></i>
+            <span> About</span>
+          </a>
+        </li>
+        <li>
+          <a href="@Url.Action("Contact", "Home")">
+            <i class="fa fa-phone"></i>
+            <span> Contact</span>
+          </a>
+        </li>
+        <li>
+          <a href="@Url.Action("Cart", "Orders")">
+            <i class="fa fa-shopping-cart"></i>
+            <span> Cart</span>
+          </a>
+        </li>
+        <li>
+          <a href="@Url.Action("WishList", "Orders")">
+            <i class="fa fa-heart"></i>
+            <span> Wish List</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        <li>
+          <audio id="player" src="../../images/dance.mp3" autoplay></audio>
+          <span>
+            <a onclick="musicPlayer()"><i class='fa fa-volume-up fa-2x'></i></a>
+            <span id="msg"></span>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

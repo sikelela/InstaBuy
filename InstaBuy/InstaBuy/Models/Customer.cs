@@ -20,6 +20,7 @@ namespace InstaBuy.Models
     public string AddressCity { get; set; }
     public int ProvinceID { get; set; }
     public int CountryID { get; set; }
+
   }
 
   public class CustomerDBContext : DbContext
