@@ -1,0 +1,34 @@
+﻿
+<html ng-app="myModule">
+
+<head>
+  <title>Sikelela Angularjs Introduction</title>
+  <script src="Scripts/angular.min.js"></script>
+  <script src="Scripts/account.js"></script>
+</head>
+
+<body>
+  <div ng-controller="myController" style="font-family:Arial Black;">
+    <h2 style="background-color: Yellow;color: Blue; text-align: center; font-style: oblique">Sikelela's INTRODUCTION TO ANGULARJS</h2>
+    <fieldset>
+      <legend style="font-family:Arial Black;color:orangered">C# CORNER PROFILE INFORMATION</legend>
+      <div ng-controller="myController">
+        <div style="color:blue">
+          Name : {{ Account.Name }}
+        </div>
+        <div style="color:green">
+          Site Url : {{ Account.Site }}
+        </div>
+        <div>
+          <img src="{{Account.Flair}}"
+               alt="{{ Account.Name + ' Flair' }}"
+               style="height:60px; width:300px" />
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <footer>
+    <p style="background-color: Yellow; font-weight: bold; color:blue; text-align: center; font-style: oblique">© @DateTime.Now.ToLocalTime()</p> @*Add Date Time*@
+  </footer>
+</body>
+</html>   

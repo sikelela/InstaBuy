@@ -151,6 +151,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrderItemStatusController.cs" />
@@ -224,6 +225,8 @@
     <Content Include="images\ovs.png" />
     <Content Include="images\pink.jpg" />
     <Content Include="images\shoes.png" />
+    <Content Include="Scripts\account.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Styles\bootstrap.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -346,6 +349,7 @@
     <Content Include="Views\Orders\CustomerOrders.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="tsScripts\tsconfig.json" />
+    <Content Include="Views\Account\Account.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
