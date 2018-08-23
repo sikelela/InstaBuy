@@ -256,7 +256,6 @@
     <Content Include="Bundles\styles.js.map" />
     <Content Include="Bundles\vendor.js.map" />
     <Content Include="package.json" />
-    <Content Include="package-lock.json" />
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\fonts\fontawesome-webfont.woff" />
